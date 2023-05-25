@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: rgb(56, 56, 77);
+  font-family: 'DM Sans';
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: rgb(59,59,59);
+  margin: auto;
+}
+
+.bio {
+  font-size: 30px;
+}
+
+.bio-med {
+  font-size: 27px;
+}
+
+.bio-med-ul {
+  font-size: 27px;
+  text-decoration: underline;
+}
+
+.bio-small {
+  font-size: 24px;
+}
+.bio-shmed {
+  font-size: 21px;
+}
+
+.tiny-text {
+  font-size: 14px;
+}
+
+.redbox {
+  border: 2px solid rgb(221, 0, 118);
+  padding: 7px 20px 7px 20px;
+  border-radius: 3px;
+}
+
+
+
