@@ -1,18 +1,10 @@
-import React, { useRef, useState, useEffect} from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { useFadeInTransition, useSlideInRight, useSlideInLeft} from './Animations';
+import React from 'react';
+import { useAnimationOnScroll } from './Animations';
 import '../stylesheets/contact.css'
 
 function Contact() {
-  const fadeIn = useRef(null);
-  const slideInRight = useRef(null);
-  const slideInLeft = useRef(null);
-
-
-  useFadeInTransition(fadeIn); // Fade in with custom options
-  useSlideInRight(slideInRight); // Slide in from the right with custom options
-  useSlideInLeft(slideInLeft); // Slide in from the right with custom options
-
+  const refSlideInRight = useAnimationOnScroll('slideInRight');
+  const refSlideInLeft = useAnimationOnScroll('slideInLeft');
   
   return (
     <section id="contact">
@@ -25,12 +17,12 @@ function Contact() {
       <br/><br/><br/><br/>
       <div className="animation-element slide-right">
         <div className="flex-column align-items-sm-center">
-          <h1 className="text-center" ref={slideInRight}>CONTACT</h1>
-          <h5 className="underline" ref={slideInLeft}></h5>
+          <h1 className="text-center" ref={refSlideInRight}>CONTACT</h1>
+          <h5 className="underline" ref={refSlideInRight} ></h5>
         </div>
       </div>
     <div className="d-flex flex-column align-items-sm-center container">
-      <p className="mt-5 text-center" ref={fadeIn}>Have a question or want to work together?</p>
+      <p className="mt-5 text-center">Have a question or want to work together?</p>
       <div className="col-lg-5 mt-2">
         <form action="">
           <input 

@@ -1,6 +1,9 @@
 #about {
-  background-color:rgb(255, 252, 252); 
-  font-weight: 600;
+  background-color: white; 
+}
+
+#about h1 {
+  font-weight: 700; 
 }
 
 ul {
@@ -12,11 +15,11 @@ p {
   line-height:180%;
 }
 
-#author {
+.author {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path: polygon(25% 20%, 75% 20%, 100% 50%, 75% 80%, 25% 80%, 0% 50%);
+  position: relative;
 }
 
 #text {
